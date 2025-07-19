@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/your-username/your-repo.git'
+                git 'git@github.com:HARSHITHA-G-M/FlaskOps-cicd.git'
             }
         }
         stage('Setup Python Virtual Env') {
