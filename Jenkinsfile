@@ -28,6 +28,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 sh 'export DOCKER_BUILDKIT=1'
+                sh 'cd app'
                 sh 'docker build -t flask-app .'
             }
         }
