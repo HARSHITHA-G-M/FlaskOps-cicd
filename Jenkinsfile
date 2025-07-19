@@ -12,6 +12,7 @@ pipeline {
                 python3 -m venv venv
                 . venv/bin/activate
                 pip install --upgrade pip
+                cd app
                 pip install -r requirements.txt
                 '''
             }
